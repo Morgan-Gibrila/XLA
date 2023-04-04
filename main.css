@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+.project-posters{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#project-poster-scroll-zone{
+    height: 90vh;
+    width: 100vw;
+    overflow-y: scroll;
+}
+#project-poster-scroll-zone::-webkit-scrollbar{
+    display: none
+}
+#home-strip{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#PP1{
+    background-color: blue;
+}
+#PP2{
+    background-color: red;
+}
+#PP3{
+    background-color: blueviolet;
+}
+#PP4{
+    background-color: green;
+}
+#PP5{
+    background-color: orange;
+}
+

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;600;700&display=swap');
+
 body{
     margin: 0;
 }
@@ -5,18 +7,31 @@ body{
 body::-webkit-scrollbar{
     display: none;
 }
+a{
+    text-decoration: none;
+}
+
 .project-posters{
     height: 90vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-size: cover;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+.view-button{
+    font-family: 'kanit', sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    -webkit-text-fill-color: rgba(0,0,0,10);
 }
 #project-poster-scroll-zone{
     height: 90vh;
     width: 100vw;
     overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 #project-poster-scroll-zone::-webkit-scrollbar{
     display: none
@@ -29,18 +44,23 @@ body::-webkit-scrollbar{
     justify-content: center;
 }
 #PP1{
+    /* background-image: url(images/PastryKnight-Bakery-SplashScreen\ copy.png); */
     background-color: blue;
 }
 #PP2{
+    /* background-image: url(images/PastryKnight-StrawberryFieldsBattle-2-11-22-2.png); */
     background-color: red;
 }
 #PP3{
+    /* background-image: url(images/maxresdefault-4.jpg); */
     background-color: blueviolet;
 }
 #PP4{
+    /* background-image: url(images/641970-2.jpg); */
     background-color: green;
 }
 #PP5{
+    /* background-image: url(images/1248088\ copy.png); */
     background-color: orange;
 }
 

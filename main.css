@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,400;0,600;0,700;0,800;0,900;1,800;1,900&display=swap');
 
 body{
     margin: 0;
@@ -37,11 +37,22 @@ a{
     display: none
 }
 #home-strip{
-    height: 10vh;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
     width: 100vw;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
+    /* z-index: 1; */
+}
+.home-strip-buttons{
+    color: black;
+    margin: 0 0.8% 0 0.8%;
+    font-family: 'kanit', sans-serif;
+    font-weight: 900;
+    font-size: 4em;
 }
 #PP1{
     /* background-image: url(images/PastryKnight-Bakery-SplashScreen\ copy.png); */

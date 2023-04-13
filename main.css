@@ -12,7 +12,7 @@ a{
 }
 
 .project-posters{
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -25,10 +25,15 @@ a{
     font-family: 'kanit', sans-serif;
     font-weight: bold;
     font-size: 6em;
-    -webkit-text-fill-color: rgba(0,0,0,10);
+
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
 }
 #project-poster-scroll-zone{
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
@@ -36,27 +41,38 @@ a{
 #project-poster-scroll-zone::-webkit-scrollbar{
     display: none
 }
-#home-strip{
+#marquee-contianer{
+    --gap:1rem;
     position: absolute;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
+    bottom: 0px;
     width: 100vw;
-    /* display: flex; */
-    align-items: center;
-    justify-content: center;
-    /* z-index: 1; */
+    display: flex;
+    overflow: hidden;
+    gap: var(--gap);
+
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(15px);
+}
+#marquee-content{
+    margin: 0;
+    padding: 0 ;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: var(--gap);
+
+    animation: scroll-left 20s linear infinite;
 }
 .home-strip-buttons{
     color: black;
-    margin: 0 0.8% 0 0.8%;
     font-family: 'kanit', sans-serif;
     font-weight: 900;
     font-size: 4em;
 }
 #PP1{
-    /* background-image: url(images/PastryKnight-Bakery-SplashScreen\ copy.png); */
-    background-color: blue;
+    background-image: url(images/Screenshot\ 2023-04-13\ at\ 13.29.43.png);
+    /* background-color: blue; */
 }
 #PP2{
     /* background-image: url(images/PastryKnight-StrawberryFieldsBattle-2-11-22-2.png); */
@@ -75,3 +91,11 @@ a{
     background-color: orange;
 }
 
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX( calc(-100% - var(--gap)));
+    }   
+}

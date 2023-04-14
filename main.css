@@ -1,16 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,400;0,600;0,700;0,800;0,900;1,800;1,900&display=swap');
-
-body{
-    margin: 0;
-}
-
-body::-webkit-scrollbar{
-    display: none;
-}
-a{
-    text-decoration: none;
-}
-
+/* --- Home page --- */
 .project-posters{
     height: 100vh;
     width: 100vw;
@@ -30,6 +18,7 @@ a{
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color:transparent;
 }
 #project-poster-scroll-zone{
@@ -52,6 +41,7 @@ a{
 
     background: rgba(255, 255, 255, 0.2);
     -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
 }
 #marquee-content{
     margin: 0;
@@ -64,33 +54,34 @@ a{
 
     animation: scroll-left 20s linear infinite;
 }
-.home-strip-buttons{
+.marquee-buttons{
     color: black;
     font-family: 'kanit', sans-serif;
     font-weight: 900;
     font-size: 4em;
 }
-#PP1{
+#project-poster-1{
     background-image: url(images/Screenshot\ 2023-04-13\ at\ 13.29.43.png);
     /* background-color: blue; */
 }
-#PP2{
+#project-poster-2{
     /* background-image: url(images/PastryKnight-StrawberryFieldsBattle-2-11-22-2.png); */
     background-color: red;
 }
-#PP3{
+#project-poster-3{
     /* background-image: url(images/maxresdefault-4.jpg); */
     background-color: blueviolet;
 }
-#PP4{
+#project-poster-4{
     /* background-image: url(images/641970-2.jpg); */
     background-color: green;
 }
-#PP5{
+#project-poster-5{
     /* background-image: url(images/1248088\ copy.png); */
     background-color: orange;
 }
 
+/* --- Animeation --- */
 @keyframes scroll-left {
     from {
         transform: translateX(0);

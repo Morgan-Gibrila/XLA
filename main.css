@@ -61,8 +61,8 @@
     font-size: 4em;
 }
 #project-poster-1{
-    background-image: url(images/Screenshot\ 2023-04-13\ at\ 13.29.43.png);
-    /* background-color: blue; */
+    /* background-image: url(images/Screenshot\ 2023-04-13\ at\ 13.29.43.png); */
+    background-color: blue;
 }
 #project-poster-2{
     /* background-image: url(images/PastryKnight-StrawberryFieldsBattle-2-11-22-2.png); */

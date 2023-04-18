@@ -10,3 +10,9 @@ body::-webkit-scrollbar{
 a{
     text-decoration: none;
 }
+#site-logo{
+    color: black;
+    font-family: 'kanit', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+}

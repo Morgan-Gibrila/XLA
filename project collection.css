@@ -1,8 +1,461 @@
 body{
-    background-color: aqua;
+    background-color: beige;
+}
+#site-logo-strip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+#project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+    width: 90%;
+    margin: 5%;
+}
+.project-card{
+    border-radius: 10px;
+    aspect-ratio: 16 /9 ;
+    width: max;
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    background-color: coral;
+    
+    transition: transform 300ms ease;
 }
 
-.project-grid{
+#project-card-1{
+    background-image: url(IMAGES/Screenshot\ 2023-04-17\ at\ 23.45.44.png);
+    background-size: cover;
+    background-repeat: none;
+}
+
+#project-card-2{
+    background-image: url(IMAGES/PastryKnight-Bakery-SplashScreen\ copy.png);
+    background-size: cover;
+    background-repeat: none;
+}
+
+.project-card-container{
+    position: relative;
     display: grid;
-    grid-template-columns: 25%;
+    grid-template:repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+/* --- grid sections on the squares --- */
+.perspective-grid{
+    z-index: 10;
+    position: absolute;
+    /* outline: 1px solid pink; */
+}
+.project-card-container >div:nth-child(1){
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    inset: 0;
+}
+.project-card-container >div:nth-child(2){
+    grid-column: 2 / 3;
+    grid-row: 1 /2;
+    inset: 0;
+}
+.project-card-container >div:nth-child(3){
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    inset: 0;
+}
+.project-card-container >div:nth-child(4){
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    inset: 0;
+}
+.project-card-container >div:nth-child(5){
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    inset: 0;
+}
+.project-card-container >div:nth-child(6){
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    inset: 0;
+}
+.project-card-container >div:nth-child(7){
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    inset: 0;
+}
+.project-card-container >div:nth-child(8){
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    inset: 0;
+}
+.project-card-container >div:nth-child(9){
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    inset: 0;
+}
+
+/* --- Whole lot of hovers --- */
+#perspective-square-11:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(-15deg)
+    rotateX(15deg);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-12:hover ~ .project-card{ 
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(0deg)
+    rotateX(15deg);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-13:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(15deg)
+    rotateX(15deg);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-14:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(-15deg)
+    rotateX(0deg);
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-15:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(0deg)
+    rotateX(0deg);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-16:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(15deg)
+    rotateX(0deg);
+    box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-17:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(-15deg)
+    rotateX(-15deg);
+    box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-18:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(0deg)
+    rotateX(-15deg);
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-19:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(15deg)
+    rotateX(-15deg);
+    box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#perspective-square-21:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(-15deg)
+    rotateX(15deg);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-22:hover ~ .project-card{ 
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(0deg)
+    rotateX(15deg);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-23:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(15deg)
+    rotateX(15deg);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-24:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(-15deg)
+    rotateX(0deg);
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-25:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(0deg)
+    rotateX(0deg);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-26:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(15deg)
+    rotateX(0deg);
+    box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-27:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(-15deg)
+    rotateX(-15deg);
+    box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-28:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(0deg)
+    rotateX(-15deg);
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-29:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(15deg)
+    rotateX(-15deg);
+    box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#perspective-square-31:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(-15deg)
+    rotateX(15deg);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-32:hover ~ .project-card{ 
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(0deg)
+    rotateX(15deg);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-33:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(15deg)
+    rotateX(15deg);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-34:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(-15deg)
+    rotateX(0deg);
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-35:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(0deg)
+    rotateX(0deg);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-36:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(15deg)
+    rotateX(0deg);
+    box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-37:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(-15deg)
+    rotateX(-15deg);
+    box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-38:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(0deg)
+    rotateX(-15deg);
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-39:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(15deg)
+    rotateX(-15deg);
+    box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-41:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(-15deg)
+    rotateX(15deg);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-42:hover ~ .project-card{ 
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(0deg)
+    rotateX(15deg);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-43:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(15deg)
+    rotateX(15deg);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-44:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(-15deg)
+    rotateX(0deg);
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-45:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(0deg)
+    rotateX(0deg);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-46:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(15deg)
+    rotateX(0deg);
+    box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-47:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(-15deg)
+    rotateX(-15deg);
+    box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-48:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(0deg)
+    rotateX(-15deg);
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-49:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(15deg)
+    rotateX(-15deg);
+    box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-51:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(-15deg)
+    rotateX(15deg);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-52:hover ~ .project-card{ 
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(0deg)
+    rotateX(15deg);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-53:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(15deg)
+    rotateX(15deg);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-54:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(-15deg)
+    rotateX(0deg);
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-55:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(0deg)
+    rotateX(0deg);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-56:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(15deg)
+    rotateX(0deg);
+    box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-57:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(-15deg)
+    rotateX(-15deg);
+    box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-58:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(0deg)
+    rotateX(-15deg);
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+}
+#perspective-square-59:hover ~ .project-card{
+    transform: 
+    perspective(5000px)
+    scale(1.03)
+    rotateY(15deg)
+    rotateX(-15deg);
+    box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.5);
 }

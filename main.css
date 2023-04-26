@@ -72,13 +72,13 @@
 #project-poster-1{
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: blue;
+    /* background-color: blue; */
     background-image: url(images/Screenshot\ 2023-04-17\ at\ 23.45.44.png);
 }
 #project-poster-2{
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: red;
+    /* background-color: red; */
     background-image: url(images/PastryKnight-Bakery-SplashScreen\ copy.png);
 }
 #project-poster-3{

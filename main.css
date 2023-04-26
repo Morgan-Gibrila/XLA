@@ -20,19 +20,15 @@
     font-family: 'kanit', sans-serif;
     font-weight: bold;
     font-size: 6em;
-
-    /* background: rgba(255, 255, 255, 0.2); */
-    /* -webkit-backdrop-filter: blur(10px); */
-    /* backdrop-filter: blur(10px); */
-    /* -webkit-background-clip: text; */
-    /* background-clip: text; */
-    -webkit-text-fill-color:transparent;
-    text-shadow: 0px 0px 10px rgb(60, 60, 60);
+    color: black;
     transition: 150ms ease;
+    text-transform: uppercase;
+    filter: invert(1);
+    mix-blend-mode: difference;
 }
 .view-button:hover{
-    -webkit-text-fill-color: black;
-    text-shadow: none;
+    filter: none;
+    mix-blend-mode: normal;
 }
 #project-poster-scroll-zone{
     height: 100vh;
@@ -74,16 +70,16 @@
     font-size: 4em;
 }
 #project-poster-1{
-    background-image: url(images/Screenshot\ 2023-04-17\ at\ 23.45.44.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: blue;
+    background-image: url(images/Screenshot\ 2023-04-17\ at\ 23.45.44.png);
 }
 #project-poster-2{
-    background-image: url(images/PastryKnight-Bakery-SplashScreen\ copy.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: red;
+    background-image: url(images/PastryKnight-Bakery-SplashScreen\ copy.png);
 }
 #project-poster-3{
     /* background-image: url(images/maxresdefault-4.jpg); */

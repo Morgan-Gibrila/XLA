@@ -1,0 +1,47 @@
+body{
+    background-color: beige;
+}
+*{
+    font-family: 'kanit', sans-serif;
+}
+#site-logo-strip{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.project-page-image{
+    aspect-ratio: 16 /9 ;
+    width: 100vw;
+    background-image: url(IMAGES/PastryKnight-Bakery-SplashScreen\ copy.png);
+    /* background-color: blue; */
+    background-size: cover;
+}
+.project-page-text-section{
+    margin: -25vh 2% 0 2%;
+    background-color: white ;
+    width: 96vw;
+    height: max-content;
+    border-radius: 10px;
+}
+.project-page-text{
+    margin: 0 2% 0 2%;
+}
+.project-page-text > iframe{
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+.project-page-text > h1{
+    padding-top: 2%;
+}
+.project-page-summary{
+    margin: 0 0 0 5%;
+}
+.summary-grid{
+    display: grid;
+    grid-template-columns: 20%  80%;
+}
+.project-page-author-detail{
+    border-right: 2px solid black;
+}

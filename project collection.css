@@ -96,6 +96,13 @@ body{
     inset: 0;
 }
 
+.perspective-grid-button{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+}
+
 /* --- Whole lot of hovers --- */
 .perspective-square-1:hover ~ .project-card{
     transform: 

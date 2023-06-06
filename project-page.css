@@ -1,8 +1,20 @@
 body{
-    background-color: beige;
+    background-color: beige;    
 }
 *{
     font-family: 'kanit', sans-serif;
+}
+p{
+    font-size: 1.3rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+img{
+    aspect-ratio: 16 /9 ;
+}
+.project-page-author-detail p{
+    font-size: 1.5rem;
 }
 #site-logo-strip{
     position: absolute;
@@ -14,8 +26,7 @@ body{
 .project-page-image{
     aspect-ratio: 16 /9 ;
     width: 100vw;
-    background-image: url(IMAGES/PastryKnight-Bakery-SplashScreen\ copy.png);
-    /* background-color: blue; */
+    background-color: blue;
     background-size: cover;
 }
 .project-page-text-section{
@@ -24,6 +35,8 @@ body{
     width: 96vw;
     height: max-content;
     border-radius: 10px;
+    /* border: 2px solid black; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
 }
 .project-page-text{
     margin: 0 2% 0 2%;
@@ -34,6 +47,8 @@ body{
 }
 .project-page-text > h1{
     padding-top: 2%;
+    padding-left: 2%;
+    font-size: 2.5rem;
 }
 .project-page-summary{
     margin: 0 0 0 5%;
@@ -44,4 +59,30 @@ body{
 }
 .project-page-author-detail{
     border-right: 2px solid black;
+}
+
+/* WHY THE FICKITY FUCK IT NO  WORK */
+.not-iframe {
+    width: 50%;
+    position: relative;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main_text_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin: 40px 0;
+}
+.main_text_grid_text{
+    text-align: center;
+    margin: auto;
+}
+.main_text_grid_text_no_vert{
+    text-align: justify;
+}
+.main_text_grid_list{
+    margin: auto;
 }

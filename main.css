@@ -70,10 +70,10 @@
     font-size: 4em;
 }
 #project-poster-1{
+    background-image: url(IMAGES/MyDesignMindPoster.png);
     background-size: cover;
     background-repeat: no-repeat;
     /* background-color: blue; */
-    background-image: url(IMAGES/MyDesignMindPoster.png);
 }
 #project-poster-2{
     background-size: cover;

@@ -75,25 +75,25 @@
     background-repeat: no-repeat;
 }
 #project-poster-2{
+    background-image: url(images/Liz_yau.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(images/Liz_yau.png);
     /* background-color: red; */
 }
 #project-poster-3{
+    background-image: url(images/sadovnikova.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(images/sadovnikova.png);
 }
 #project-poster-4{
+    background-image: url(images/Elke.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(images/Elke.png);
 }
 #project-poster-5{
+    background-image: url(images/JA_kotlow.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(images/JA_kotlow.png);
     /* background-color: orange; */
 }
 

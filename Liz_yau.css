@@ -1,0 +1,12 @@
+.project-page-image{
+    background-image:url(IMAGES/Liz_yau.png);
+}
+#Liz_Yau_link{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#Liz_Yau_link:hover{
+    color: green;
+}

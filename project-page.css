@@ -8,11 +8,9 @@ p{
     font-size: 1.3rem;
 }
 h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
-img{
-    aspect-ratio: 16 /9 ;
-}
+
 .project-page-author-detail p{
     font-size: 1.5rem;
 }
@@ -61,7 +59,7 @@ img{
     border-right: 2px solid black;
 }
 
-/* WHY THE FICKITY FUCK IT NO  WORK */
+
 .not-iframe {
     width: 50%;
     position: relative;

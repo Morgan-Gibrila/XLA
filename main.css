@@ -73,25 +73,28 @@
     background-image: url(IMAGES/MyDesignMindPoster.png);
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-color: blue; */
 }
 #project-poster-2{
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url(images/Liz_yau.png);
     /* background-color: red; */
-    background-image: url(images/PastryKnight-Bakery-SplashScreen\ copy.png);
 }
 #project-poster-3{
-    /* background-image: url(images/maxresdefault-4.jpg); */
-    background-color: blueviolet;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/sadovnikova.png);
 }
 #project-poster-4{
-    /* background-image: url(images/641970-2.jpg); */
-    background-color: green;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/Elke.png);
 }
 #project-poster-5{
-    /* background-image: url(images/1248088\ copy.png); */
-    background-color: orange;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/JA_kotlow.png);
+    /* background-color: orange; */
 }
 
 /* --- Animeation --- */

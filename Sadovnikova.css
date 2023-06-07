@@ -1,0 +1,15 @@
+#site-logo{
+    color: white;
+}
+.project-page-image{
+    background-image:url(IMAGES/sadovnikova.png);
+}
+#Sadovnikova_link{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#Sadovnikova_link:hover{
+    color: green;
+}

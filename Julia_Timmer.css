@@ -1,7 +1,15 @@
+img{
+    aspect-ratio: 16 /9;
+}
 .project-page-image{
     background-image:url(IMAGES/MyDesignMindPoster.png);
 }
 #julia_final_experience_link{
+    color: black;
     text-align: center;
     font-size: 2rem;
+}
+
+#julia_final_experience_link:hover{
+    color: green;
 }

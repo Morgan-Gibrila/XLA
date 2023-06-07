@@ -1,3 +1,17 @@
 .project-page-image{
-    background-image:url(IMAGES/Screenshot\ 2023-04-17\ at\ 23.45.44.png);
+    background-image:url(IMAGES/JA_kotlow.png);
+}
+
+#site-logo{
+    color: white;
+}
+
+#Ja_kotlow_link{
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#Ja_kotlow_link:hover{
+    color: green;
 }

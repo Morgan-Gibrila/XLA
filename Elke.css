@@ -1,0 +1,12 @@
+.project-page-image{
+    background-image:url(IMAGES/);
+}
+#Elke_link{
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#Elke_link:hover{
+    color: green;
+}
